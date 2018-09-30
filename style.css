@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+main{
+   /* background: #ddd;*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 210px 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.header{
+    grid-column: 1/span 2;
+    background-color: #FF805F;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    font-family: 'Charmonman', cursive;
+    font-size: 20px;
+    
+}
+.header.box{   
+    width: 400px;
+    border: 3px double white;
+}
+.header.name.box{
+    font-size: 50px;
+    border-bottom:none;
+}
+.header.job.box{
+    border-top:none;
+}
