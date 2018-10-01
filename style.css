@@ -6,12 +6,16 @@
 main{
    /* background: #ddd;*/
     font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 210px 1fr;
+    display: grid;    
+    grid-template-rows: 210px 100%;
+    grid-template-columns: 20% 80%;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+    height:auto;
+    width: auto;
+    background: #ddd;
 }
+
 .header{
     grid-column: 1/span 2;
     background-color: #FF805F;
@@ -22,6 +26,7 @@ main{
     border: 1px solid white;
     font-family: 'Charmonman', cursive;
     font-size: 20px;
+    grid-row:1 / span 1;
     
 }
 .header.box{   
@@ -35,3 +40,65 @@ main{
 .header.job.box{
     border-top:none;
 }
+
+.sidebar{
+    background-color:#FAEFEC;
+    grid-row:2/span 1;
+    grid-column:1 /span 1;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    
+}
+.sidebar img{
+    border-radius: 100px;
+    justify-items: center;
+    align-self: center;
+    margin-bottom:50px;
+    margin-top: 20px;
+   
+}
+.sidebar p{
+    align-self: center;
+    justify-items: center;
+    font-family:'PT Serif', serif;
+    font-size: 25px;
+}
+.sidebar h2{
+    font-family:'Kodchasan', sans-serif;
+    font-size: 25px;
+    text-decoration: underline solid grey;
+    padding-bottom: 10px;
+}
+
+.contact{
+    padding-top: 10px;
+    border-bottom: 1.5px solid #000;
+    padding-bottom:20px;
+    margin-bottom: 40px;
+}
+
+.mainbar{
+    display: flex;
+    background: #ddd;
+    flex-direction: column;
+    grid-column: 2 /span 1;
+    grid-row:2 / span 1;
+    margin-left:20px;
+    
+}
+.mainbar h2{
+    
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.mainbar ul{
+    margin-left:20px;
+}
+.mainbar p{
+    border-bottom: 1px solid black;
+}
+
+
