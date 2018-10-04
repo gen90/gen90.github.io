@@ -8,16 +8,16 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;    
     grid-template-rows: 210px 100%;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr 1.75fr 4fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     height:auto;
     width: auto;
-    background: #ddd;
+    background-color: #FFF0F9;
 }
 
 .header{
-    grid-column: 1/span 2;
+    grid-column: 1/span 4;
     background-color: #FF805F;
     display:flex;
     flex-direction: column;
@@ -42,13 +42,16 @@ main{
 }
 
 .sidebar{
-    background-color:#FAEFEC;
+  
     grid-row:2/span 1;
-    grid-column:1 /span 1;
+    grid-column:2 /span 1;
     height: auto;
     display:flex;
     flex-direction:column;
     justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #BAA6B9;
     
 }
 .sidebar img{
@@ -71,6 +74,14 @@ main{
     text-decoration: underline solid grey;
     padding-bottom: 10px;
 }
+.sidebar ul{
+    padding-left: 35px;
+    line-height: 2em;
+   
+}
+.sidebar a{
+    color: red;
+}
 
 .contact{
     padding-top: 10px;
@@ -79,17 +90,22 @@ main{
     margin-bottom: 40px;
 }
 
+
 .mainbar{
     display: flex;
-    background: #ddd;
     flex-direction: column;
-    grid-column: 2 /span 1;
+    grid-column: 3 /span 1;
     grid-row:2 / span 1;
     margin-left:20px;
+    padding-left: 30px;
+    
+}
+.mainbar div{
+    padding-bottom: 10px;
     
 }
 .mainbar h2{
-    
+    border-bottom: 1.5px solid grey;
     margin-bottom: 20px;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -98,7 +114,40 @@ main{
     margin-left:20px;
 }
 .mainbar p{
-    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
+.mainbar .experience{
+    display:flex;
+    flex-direction:column;
+}
+.float{
+    display: flex;
+    flex-direction:row;
+}
+
+.float .right{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-content:center;
+    width: 500px;
+}
+.float .left{
+    width: 300px; 
+}
+
+.skills{
+    display: float;
+    line-height: 25px;
+}
+.skills #left{
+    float:left;
+    position:relative;
+}
+.skills #right{
+    float:right;
+    position: relative;
+}
+
 
 
