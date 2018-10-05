@@ -13,17 +13,13 @@ main{
     grid-row-gap: 1em;
     height:auto;
     width: auto;
-    
-}
-body{
     background-color:#FFEBE4;
+    font-family:'Kodchasan', sans-serif;
 }
 ul{
     list-style-type: none;
 }
-li#linked{
-    height: 50px;    
-}
+
 
 .header{
     grid-column: 1/span 4;
@@ -35,9 +31,9 @@ li#linked{
     border: 1px solid white;
     font-family: 'Charmonman', cursive;
     font-size: 20px;
-    grid-row:1 / span 1;
-    
+    grid-row:1 / span 1;  
 }
+
 .header.box{   
     width: 400px;
     border: 3px double white;
@@ -72,25 +68,23 @@ li#linked{
     margin-top: 20px;
    
 }
-.sidebar p{
+.sidebar ul{
     align-self: center;
     justify-items: center;
-    font-family:'PT Serif', serif;
-    font-size: 25px;
+    font-family:'Kodchasan', sans-serif;
+    font-size: 15px;
+    color:black;
+    line-height: 2em;
+    padding-left: 20px;
+}
+.sidebar a{
+    color:black;
 }
 .sidebar h2{
     font-family:'Kodchasan', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: underline solid grey;
     padding-bottom: 10px;
-}
-.sidebar ul{
-    padding-left: 35px;
-    line-height: 2em;
-   
-}
-.sidebar a{
-    color: red;
 }
 
 .contact{
