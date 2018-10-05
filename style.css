@@ -13,7 +13,16 @@ main{
     grid-row-gap: 1em;
     height:auto;
     width: auto;
-    background-color: #FFF0F9;
+    
+}
+body{
+    background-color:#FFEBE4;
+}
+ul{
+    list-style-type: none;
+}
+li#linked{
+    height: 50px;    
 }
 
 .header{
@@ -51,7 +60,8 @@ main{
     justify-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #BAA6B9;
+    background-color: #5FFFCC;
+    box-shadow: 5px 5px 5px #FFC0B2;
     
 }
 .sidebar img{
@@ -142,12 +152,15 @@ main{
 }
 .skills #left{
     float:left;
-    position:relative;
+    width: 300px;
+    list-style-type: square;
 }
 .skills #right{
     float:right;
-    position: relative;
+    width: 300px;
+    list-style-type: square;
 }
+
 
 
 
