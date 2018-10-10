@@ -8,7 +8,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;    
     grid-template-rows: 210px 100%;
-    grid-template-columns: 1fr 1.75fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 4fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     height:auto;
@@ -69,17 +69,20 @@ ul{
     margin-top: 20px;
    
 }
-.sidebar ul{
-    align-self: center;
-    justify-items: center;
+.sidebar ul{   
     font-family:'Kodchasan', sans-serif;
     font-size: 15px;
     color:black;
     line-height: 2em;
-    padding-left: 20px;
+    
 }
+
 .sidebar a{
     color:black;
+}
+i{
+    margin-right: 10px;
+    background-color: lightblue;
 }
 .sidebar h2{
     font-family:'Kodchasan', sans-serif;
